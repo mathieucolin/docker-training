@@ -9,6 +9,7 @@ script:
   - docker run -e CI=true mathieucolin/docker-training npm run test
 
 deploy:
+  edge: true
   provider: elasticbenstalk
   region: "us-east-2"
   app: "docker"
